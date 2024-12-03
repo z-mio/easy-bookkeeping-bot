@@ -16,6 +16,7 @@
 | `FROM_CURRENCY`      | 默认货币                          |
 | `TO_CURRENCY`        | 默认结算货币                        |
 | `PROXY`              | 代理地址, 海外服务器不用填                |
+| `IS_WEB_TELEGRAM`    | 兼容网页版Tg, 默认关闭                 |
 
 ### 开始部署
 
