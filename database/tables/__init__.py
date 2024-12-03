@@ -1,0 +1,1 @@
+from .chat_group_mapping import ChatGroupMapping

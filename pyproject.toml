@@ -1,0 +1,22 @@
+[project]
+name = "easy-accounting-bot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "aiosqlite>=0.20.0",
+    "httpx>=0.28.0",
+    "jinja2>=3.1.4",
+    "loguru>=0.7.2",
+    "pandas>=2.2.3",
+    "pyrogram",
+    "python-dotenv>=1.0.1",
+    "pyyaml>=6.0.2",
+    "sqlalchemy>=2.0.36",
+    "tgcrypto>=1.2.5",
+    "xlsxwriter>=3.2.0",
+]
+
+[tool.uv.sources]
+pyrogram = { url = "https://github.com/KurimuzonAkuma/pyrogram/archive/v2.1.24.zip" }

@@ -1,0 +1,26 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: ["master"]
+    paths-ignore:
+      - "README.md"
+  pull_request:
+    branches: ["master"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.ALIST_GITHUB_TOKEN }}
+
+      - name: 构建 Docker 镜像
+        run:
+          |
+          docker build . --file Dockerfile --tag ghcr.io/z-mio/easy-accounting-bot:latest 
+          docker push ghcr.io/z-mio/easy-accounting-bot:latest 
