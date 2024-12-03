@@ -22,5 +22,5 @@ jobs:
       - name: 构建 Docker 镜像
         run:
           |
-          docker build . --file Dockerfile --tag ghcr.io/z-mio/easy-accounting-bot:latest 
-          docker push ghcr.io/z-mio/easy-accounting-bot:latest 
+          docker build . --file Dockerfile --tag ghcr.io/z-mio/easy-bookkeeping-bot:latest 
+          docker push ghcr.io/z-mio/easy-bookkeeping-bot:latest 
