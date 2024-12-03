@@ -17,7 +17,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.ALIST_GITHUB_TOKEN }}
+          password: ${{ secrets.E_GITHUB_TOKEN }}
 
       - name: 构建 Docker 镜像
         run:
