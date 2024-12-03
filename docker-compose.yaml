@@ -4,11 +4,12 @@ services:
     image: ghcr.io/z-mio/easy-accounting-bot
     container_name: easy-accounting-bot
     environment:
-      - ADMIN=${ADMIN}
+      - AVAILABLE_CHAT=${AVAILABLE_CHAT}
       - API_HASH=${API_HASH}
       - API_ID=${API_ID}
       - BOT_TOKEN=${BOT_TOKEN}
       - FROM_CURRENCY=${FROM_CURRENCY}
       - TO_CURRENCY=${TO_CURRENCY}
       - PROXY=${PROXY}
+      - IS_WEB_TELEGRAM=${IS_WEB_TELEGRAM}
     restart: unless-stopped

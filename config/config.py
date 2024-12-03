@@ -12,8 +12,8 @@ OP.mkdir(exist_ok=True, parents=True)
 
 class BotConfig:
     def __init__(self):
-        self.available_chat: list[int] = list(
-            map(int, getenv("AVAILABLE_CHAT".replace(" ", "")).split(","))
+        self.available_chat: list[int] | None = (
+            list(map(int, getenv("AVAILABLE_CHAT").replace(" ", "").split(","))) or None
         )
         self.bot_token = getenv("BOT_TOKEN")
         self.api_id = getenv("API_ID")
