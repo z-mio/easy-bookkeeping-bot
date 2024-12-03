@@ -1,4 +1,4 @@
-# easy-accounting-bot
+# easy-bookkeeping-bot
 
 ---
 
